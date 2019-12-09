@@ -8,7 +8,7 @@ public class Primitive {
         char c = 'A';
         System.out.println(c);
 
-        byte y = 42;
+         byte y = 42;
         System.out.println(y);
 
         short x = 12_000;
