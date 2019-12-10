@@ -6,18 +6,18 @@ public class Simple {
         int beta = 21;
         int gamma = 12;
 
-        System.out.println("alpha < beta? " + (alpha < beta)); // true
-        System.out.println("alpha < gamma? " + (alpha < gamma)); // false
-        System.out.println("alpha <= gamma? " + (alpha <= gamma)); // true
+        System.out.println("alpha < beta? " + (alpha < beta)); 
+        System.out.println("alpha < gamma? " + (alpha < gamma)); 
+        System.out.println("alpha <= gamma? " + (alpha <= gamma)); 
 
-        System.out.println("alpha > beta? " + (alpha > beta)); // false
-        System.out.println("alpha > gamma? " + (alpha > gamma)); // false
-        System.out.println("alpha >= gamma? " + (alpha >= gamma)); // true
+        System.out.println("alpha > beta? " + (alpha > beta)); 
+        System.out.println("alpha > gamma? " + (alpha > gamma)); 
+        System.out.println("alpha >= gamma? " + (alpha >= gamma)); 
 
-        System.out.println("alpha == beta? " + (alpha == beta)); // false
-        System.out.println("alpha == gamma? " + (alpha == gamma)); // true
+        System.out.println("alpha == beta? " + (alpha == beta)); 
+        System.out.println("alpha == gamma? " + (alpha == gamma)); 
 
-        System.out.println("alpha != beta? " + (alpha != beta)); // true
-        System.out.println("alpha != gamma? " + (alpha != gamma)); // false
+        System.out.println("alpha != beta? " + (alpha != beta)); 
+        System.out.println("alpha != gamma? " + (alpha != gamma)); 
     }
 }
