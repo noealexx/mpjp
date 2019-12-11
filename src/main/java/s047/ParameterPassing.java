@@ -49,7 +49,8 @@ public class ParameterPassing {
         System.out.println("data[0] is " + data[0]);
     }
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
+
         int primitiveValue = 12;
 
         System.out.println("primitiveValue has been initialized to " + primitiveValue);
