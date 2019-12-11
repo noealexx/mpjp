@@ -37,7 +37,7 @@ public class ParameterPassing {
     }
 
     static void reference(int[] data) {
-        if (data == null || data.length == 0) {
+        if (data == null||data.length == 0) {
             System.out.println("Nothing to do here");
             return;
         }
