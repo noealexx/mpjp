@@ -10,5 +10,6 @@ public class MethodCaller {
         
         reference.g(true);
         reference.g(false);
+       
     }
 }
