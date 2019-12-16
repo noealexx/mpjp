@@ -15,4 +15,22 @@ class SimpleTest {
 
         assertThat(result, equalTo(-42));
     }
+    @Test
+    public void negateMaxInt() { 
+//        int value = Integer.MAX_VALUE;
+//
+//        int result = simple.negate(value);
+//
+//        assertThat(result, equalTo(-2147483647));
+    }
+    @Test
+    public void negateMinInt() { 
+//        int value = Integer.MIN_VALUE; // BHO TUTTO SBAGLIATO NON SONO RIUSCITA A SEGUIRE 
+//
+//        int result = simple.negate(value);
+//
+//        assertThat(result, equalTo(-2147483647));
+    }
 }
+
+

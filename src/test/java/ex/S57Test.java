@@ -10,9 +10,9 @@ class S57Test {
 
     @Test
     void speedPlain() {
-        double actual = S57.speed(100, 9.58);
+        double actual = S57.speed(100, 9.58); // metto questi dati per testare il mio codice
 
-        assertEquals(actual, 10.438, 0.001);
+        assertEquals(actual, 10.438, 0.001); // 0.001 è l'approssimazione del risultato
     }
 
     @Test
