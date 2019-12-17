@@ -12,7 +12,13 @@ class S59Test {
     void sumPositive() {
         long actual = S59.sum(1, 3);
 
-        assertThat(actual, is(6L));
+        assertThat(actual, is(6L)); //6l sarebbe il risultato
+    }
+    
+    @Test
+    void sumLong() {
+    	long actual = S59.sum(2_000_000_000, 2_000_000_001);
+    	assertThat(actual, is (4_000_000_001L));
     }
 
     @Test
@@ -38,7 +44,7 @@ class S59Test {
 
     @Test
     void evenSumPositive() {
-        long actual = S59.evenSum(1, 3);
+        long actual = S59.evenSum(1, 3); // sbagliato
 
         assertThat(actual, is(2L));
     }
