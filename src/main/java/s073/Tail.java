@@ -1,9 +1,9 @@
 package s073;
 
 public class Tail {
-    private int size;
+    private int size; //proprietà
 
-    public Tail(int size) {
+    public Tail(int size) { //da qui in giù sono metodi
         this.size = size;
     }
 

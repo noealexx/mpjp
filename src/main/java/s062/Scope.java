@@ -20,6 +20,10 @@ public class Scope {
     public static void main(String[] args) {
         double local = 5;
         System.out.println(local);
-        staticMember = 12;
-    }
+        staticMember = 12;// può vedere static member perchè sia main, sia staticmember sono privati
+      //non potrebbe vedermi il member perchè è d'istanza ma...
+        Scope scope = new Scope (); //creo oggetto scope nella classe
+        System.out.println(scope.member);// possiamo creare un oggetto d'istanza a cui passargli il ns metodo member
+        scope.f(); // stessa cosa vale per richiamare un metodo. serve creare una reference d'istanza
+    }   
 }
