@@ -7,24 +7,24 @@ public class Dog {
 	private String name;
 	private int weight;
 
-	public Dog() {
+	public Dog() { //costruttore di default
 		this(DEFAULT_NAME, DEFAULT_WEIGHT);
 	}
 
-	public Dog(String name) {
+	public Dog(String name) { //costruttore
 		this(name, DEFAULT_WEIGHT);
 	}
 
-	public Dog(int weight) {
+	public Dog(int weight) { //costruttore
 		this(DEFAULT_NAME, weight);
 	}
 
-	public Dog(String name, int weight) {
-		this.name = name;
-		this.weight = weight;
+	public Dog(String name, int weight) { //costruttore principale
+		this.name = name; //this.name si riferisce alla proprietà name (riga7)
+		this.weight = weight; //= name è il parametro dato in riga 22 che viene assegnato alla proprietà
 	}
 
-	public String getName() {
+	public String getName() { //creo una proprietà. getname--> torna il nome, un valore
 		return name;
 	}
 
