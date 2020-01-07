@@ -67,9 +67,17 @@ public class S60 {
 	 * @return a new array holding the same elements of input, in reversed order
 	 */
 	public static int[] reverse(int[] data) {
-		int[] result = new int[0];
-
-		// TODO
+		int[] result = new int[data.length];
+var pos=0;
+/**			la virgola permette all'interno di un ciclo di mettere più di una variabile di tipo int
+ * for(int i=data.length-1; i>=0;i--){ oppure... for(int i=data.length-1, j=0; i>=0; j++, i--){
+ * result[pos]=data[i];							uguale
+ * pos++;										result[i]=data[data.length-1-i];
+ */
+for (int i = 0; i < data.length; i++) {
+	result[i]=data[data.length-1-i];
+}
+		
 
 		return result;
 	}
@@ -81,8 +89,19 @@ public class S60 {
 	 * @return the average
 	 */
 	public static double average(int[] data) {
-		// TODO
-		return 0;
+		double sum = 0;
+		if (data == null) {
+			System.out.println("data is null");
+		}
+		if (data.length == 0) {
+			System.out.println("data length is 0");
+		}
+		for (int value : data) {
+			sum += value;
+//		for (int i=0; i < data.length; i++) {
+//			sum += data[i];
+		}
+		return sum / data.length;
 	}
 
 	/**
@@ -91,8 +110,22 @@ public class S60 {
 	 * @param data
 	 * @return the largest value
 	 */
+
 	public static int max(int[] data) {
-		// TODO
-		return 0;
+//		if (data == null) {
+//			System.out.println("data is null"); il sistema lancia eccezione, non si scrive.
+//		}
+//		if (data.length == 0) {
+//			System.out.println("data length is 0"); NO PRINTLN!!! result max;
+//		}
+		int max = Integer.MIN_VALUE;
+		for (int i = 0; i < data.length; i++) { //for(int value: data)
+												//if (value>max)
+												//max=value;
+			if (data[i] > max) {
+				max = data[i];
+			}
+		}
+		return max;
 	}
 }
