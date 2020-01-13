@@ -1,6 +1,5 @@
 -- sorting in natural order
-select *
-from employees
+select * from employees
 order by last_name;
 
 -- ascending, descending
@@ -11,4 +10,4 @@ order by last_name desc, first_name asc;
 -- positional notation
 select first_name, last_name
 from employees
-order by 2;
+order by 2; -- 2 sta al secondo, quindi last_name

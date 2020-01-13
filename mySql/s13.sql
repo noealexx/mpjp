@@ -1,7 +1,8 @@
 -- simple pattern matching
 select last_name
 from employees
-where last_name like '_ul%';
+where last_name like '_ul%'; -- ricerca 
+
 
 -- interval check
 select *
@@ -21,7 +22,8 @@ where region_id not in (2, 3);
 -- beware of null
 select *
 from regions
-where region_id not in (2, 3, null);
+where region_id not in (2, 3, null); -- non ritorna niente perchè c'è un null.
+-- avrei dovuto fare 'if null'
 
 -- can't compare a 'good' value with null
 select *
