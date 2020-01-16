@@ -50,8 +50,13 @@ select first_name, last_name, hire_date, datediff(now(), hire_date)
 from employees;
 
 -- commissione/no value
-select last_name, first_name, commission_pct, if null(commission_pct, 'no  value') as commi
+select last_name, first_name, 
+ifnull(commission_pct, 'no  value') as commission_pct
 from employees;
+
+select count(manager_id) 
+from employees;
+
 
 
 

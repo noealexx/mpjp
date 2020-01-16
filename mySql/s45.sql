@@ -6,3 +6,5 @@ where employee_id in (
     from employees
     where manager_id is not null)
 order by 2;
+
+
