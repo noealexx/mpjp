@@ -28,7 +28,7 @@ begin
 			set v_c = 'v_a is unknown';
 	end case;
 
-	select v_b as 'if message', v_c as 'switch message';
+	select v_b as 'if message', v_c as 'switch message'; -- ritornano due colonne (if message e switch message) e all'interno ci saranno i valori contenuti in v_b e v_c
 end;
 
 // delimiter ;

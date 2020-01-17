@@ -23,4 +23,6 @@ end;
 
 // delimiter ;
 
-select get_salary(104) as salary;
+select get_salary(
+
+104) as salary;

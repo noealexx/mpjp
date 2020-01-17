@@ -18,11 +18,12 @@ begin
 	declare continue handler for not found
 		set v_done = true;
 
-	open cur_coders;
-	while not v_done do
-		fetch cur_coders into v_first_name, v_last_name;
+	open cur_coders; -- eseguiamo select
+
+	while not v_done do-- inizia loop su tutte le righe della select
+		fetch cur_coders into v_first_name, v_last_name; -- prendi i cur_coders e inseriscili nelle variabili locali
 		set v_mailing_list = concat(v_mailing_list,
-			lower(v_first_name), "." , lower(v_last_name), "@x.dd;");
+			lower(v_first_name), "." , lower(v_last_name), "@x.dd;"); -- lower (tutto piccolo)
 	end while;
 
 	select v_mailing_list as "mailing list";
